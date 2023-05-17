@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Calculator</title>
+</head>
+
+
+<body>
+    <div>
+    <h1> Calculator Server </h1>
+    <div onsubmit="formSubmit(event)" id="form">
+
+      <input type="number" id="value1"/>
+      
+      
+      <select id="operation" required>
+
+        <option value="+">+</option>
+        <option value="-">-</option> 
+        <option value="*">*</option>
+        <option value="/">/</option>
+      
+      </select>
+
+
+      <input type="number" id="value2"/>
+      <button onclick="formSubmit(event)" type="submit" value="equals">=</button>
+      <button  onclick="reset(event)">c</button>
+       
+      
+
+       
+
+
+       <div class="result" id="result"></div>
+       
+
+    </div>
+
+    
+
+
+
+
+    
+
+    </div>
+    
+
+
+    <script src="client.js"></script>    
+</body>
+</html>
